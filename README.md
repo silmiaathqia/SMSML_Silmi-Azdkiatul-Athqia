@@ -10,9 +10,9 @@
 ![Prometheus](https://img.shields.io/badge/Prometheus-Monitoring-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-Dashboard-F46800?style=for-the-badge&logo=grafana&logoColor=white)
 
-**Proyek Akhir Kelas Membangun Sistem Machine Learning — Dicoding**
+<br/>
 
-[![Sertifikat Dicoding](https://img.shields.io/badge/Dicoding-Sertifikat-blue?style=for-the-badge)](https://www.dicoding.com/certificates/JMZVOJ9O3XN9)
+**Proyek Akhir Kelas Membangun Sistem Machine Learning — Dicoding**
 
 *oleh Silmi Azdkiatul Athqia (silmiathqia)*
 
@@ -171,24 +171,30 @@ System Metrics:          ML Model Metrics:
 
 ---
 
-## 👩‍💻 Author
-
-**Silmi Azdkiatul Athqia**
-- Dicoding: `silmiathqia`
-- GitHub: [@silmiaathqia](https://github.com/silmiaathqia)
-- Program: Laskar AI 2025 Cohort — Mahasiswa & Fresh Graduate
-
----
-
 ## 🎓 Sertifikat
 
 <div align="center">
 
-[![Lihat Sertifikat](https://img.shields.io/badge/Dicoding-Sertifikat%20MSML-blue?style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgo=)](https://www.dicoding.com/certificates/JMZVOJ9O3XN9)
-
 > 🏅 **Membangun Sistem Machine Learning** — Dicoding Indonesia
 >
-> Diperoleh oleh **Silmi Azdkiatul Athqia** | [Verifikasi Sertifikat](https://www.dicoding.com/certificates/JMZVOJ9O3XN9)
+> Diperoleh oleh **Silmi Azdkiatul Athqia**
+
+[![Lihat & Verifikasi Sertifikat](https://img.shields.io/badge/🎓%20Lihat%20Sertifikat-Dicoding-06b6d4?style=for-the-badge)](https://www.dicoding.com/certificates/JMZVOJ9O3XN9)
+
+</div>
+
+---
+
+## 👩‍💻 Author
+
+<div align="center">
+
+**Silmi Azdkiatul Athqia**
+
+[![Dicoding](https://img.shields.io/badge/Dicoding-silmiathqia-blue?style=flat-square)](https://www.dicoding.com/users/silmiathqia)
+[![GitHub](https://img.shields.io/badge/GitHub-silmiaathqia-black?style=flat-square&logo=github)](https://github.com/silmiaathqia)
+
+🎓 Laskar AI 2025 Cohort — Mahasiswa & Fresh Graduate
 
 </div>
 
@@ -196,4 +202,6 @@ System Metrics:          ML Model Metrics:
 
 <div align="center">
 <i>Proyek Akhir — Membangun Sistem Machine Learning (MSML) — Dicoding 2025</i>
+<br/>
+<sub>Made with ❤️ by Silmi Azdkiatul Athqia</sub>
 </div>
