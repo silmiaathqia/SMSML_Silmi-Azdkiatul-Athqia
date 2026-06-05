@@ -1,0 +1,185 @@
+apiVersion: 1
+groups:
+    - orgId: 1
+      name: ml-alerts
+      folder: ML Monitoring
+      interval: 1m
+      rules:
+        - uid: cfo2trqeoc7b4c
+          title: CPU Usage High
+          condition: C
+          data:
+            - refId: A
+              relativeTimeRange:
+                from: 300
+                to: 0
+              datasourceUid: cfo2iyerwipz4f
+              model:
+                adhocFilters: []
+                datasource:
+                    type: prometheus
+                    uid: cfo2iyerwipz4f
+                disableTextWrap: false
+                editorMode: builder
+                expr: ml_cpu_usage_percent
+                fullMetaSearch: false
+                includeNullMetadata: true
+                instant: true
+                interval: ""
+                intervalMs: 15000
+                legendFormat: __auto
+                maxDataPoints: 43200
+                range: false
+                refId: A
+                useBackend: false
+            - refId: C
+              datasourceUid: __expr__
+              model:
+                conditions:
+                    - evaluator:
+                        params:
+                            - 80
+                        type: gt
+                      operator:
+                        type: and
+                      query:
+                        params:
+                            - C
+                      reducer:
+                        params: []
+                        type: last
+                      type: query
+                datasource:
+                    type: __expr__
+                    uid: __expr__
+                expression: A
+                intervalMs: 1000
+                maxDataPoints: 43200
+                refId: C
+                type: threshold
+          dashboardUid: dfo2qyork35s0b
+          panelId: 1
+          noDataState: NoData
+          execErrState: Error
+          annotations:
+            __dashboardUid__: dfo2qyork35s0b
+            __panelId__: "1"
+          isPaused: false
+          notification_settings:
+            receiver: email-alert
+        - uid: dfo2v5y8vs9vkb
+          title: Memory Usage High
+          condition: C
+          data:
+            - refId: A
+              relativeTimeRange:
+                from: 300
+                to: 0
+              datasourceUid: cfo2iyerwipz4f
+              model:
+                adhocFilters: []
+                datasource:
+                    type: prometheus
+                    uid: cfo2iyerwipz4f
+                editorMode: code
+                expr: ml_memory_usage_bytes
+                instant: true
+                interval: ""
+                intervalMs: 15000
+                legendFormat: __auto
+                maxDataPoints: 43200
+                range: false
+                refId: A
+            - refId: C
+              datasourceUid: __expr__
+              model:
+                conditions:
+                    - evaluator:
+                        params:
+                            - 3.8e+09
+                        type: gt
+                      operator:
+                        type: and
+                      query:
+                        params:
+                            - C
+                      reducer:
+                        params: []
+                        type: last
+                      type: query
+                datasource:
+                    type: __expr__
+                    uid: __expr__
+                expression: A
+                intervalMs: 1000
+                maxDataPoints: 43200
+                refId: C
+                type: threshold
+          dashboardUid: dfo2qyork35s0b
+          panelId: 2
+          noDataState: NoData
+          execErrState: Error
+          annotations:
+            __dashboardUid__: dfo2qyork35s0b
+            __panelId__: "2"
+          isPaused: false
+          notification_settings:
+            receiver: email-alert
+        - uid: afo2v9hvcitxcb
+          title: Disk Usage High
+          condition: C
+          data:
+            - refId: A
+              relativeTimeRange:
+                from: 333
+                to: 187
+              datasourceUid: cfo2iyerwipz4f
+              model:
+                adhocFilters: []
+                datasource:
+                    type: prometheus
+                    uid: cfo2iyerwipz4f
+                editorMode: code
+                expr: ml_disk_usage_percent
+                instant: true
+                interval: ""
+                intervalMs: 15000
+                legendFormat: __auto
+                maxDataPoints: 43200
+                range: false
+                refId: A
+            - refId: C
+              datasourceUid: __expr__
+              model:
+                conditions:
+                    - evaluator:
+                        params:
+                            - 85
+                        type: gt
+                      operator:
+                        type: and
+                      query:
+                        params:
+                            - C
+                      reducer:
+                        params: []
+                        type: last
+                      type: query
+                datasource:
+                    type: __expr__
+                    uid: __expr__
+                expression: A
+                intervalMs: 1000
+                maxDataPoints: 43200
+                refId: C
+                type: threshold
+          dashboardUid: dfo2qyork35s0b
+          panelId: 4
+          noDataState: NoData
+          execErrState: Error
+          annotations:
+            __dashboardUid__: dfo2qyork35s0b
+            __panelId__: "4"
+          isPaused: false
+          notification_settings:
+            receiver: email-alert

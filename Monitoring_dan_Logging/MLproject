@@ -1,0 +1,16 @@
+name: Worker-Productivity-MLflow
+
+python_env: conda.yaml
+
+entry_points:
+  main:
+    command: "python modelling.py"
+  
+  train:
+    parameters:
+      data_path: {type: str, default: "processed_data"}
+      experiment_name: {type: str, default: "Worker_Productivity_Classification_Sklearn"}
+    command: "python modelling.py --data_path {data_path} --experiment_name {experiment_name}"
+  
+  build_docker:
+    command: "mlflow models build-docker -m models:/WorkerProductivityMLP_Basic/latest -n worker-productivity-mlp --enable-mlserver"

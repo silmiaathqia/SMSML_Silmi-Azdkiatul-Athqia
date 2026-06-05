@@ -1,0 +1,56 @@
+# Prometheus Configuration for Worker Productivity ML Monitoring
+# Updated to match prometheus_exporter.py configuration
+# Created by: silmiathqia
+
+global:
+  scrape_interval: 10s
+  evaluation_interval: 15s
+  scrape_timeout: 10s
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+            - "localhost:9093"
+
+rule_files:
+  - "alert_rules.yml"
+
+scrape_configs:
+  # Main ML Service (Flask app with built-in metrics)
+  - job_name: "worker-productivity-model"
+    static_configs:
+      - targets: ["localhost:5000"]
+    metrics_path: "/metrics"
+    scrape_interval: 10s
+    scrape_timeout: 5s
+    honor_labels: false
+    params:
+      format: ["prometheus"]
+
+  # Custom ML Metrics Exporter - UPDATED PORT
+  - job_name: "worker-productivity-ml-exporter"
+    static_configs:
+      - targets: ["localhost:8000"] # Changed from 8001 to 8000
+    metrics_path: "/metrics"
+    scrape_interval: 10s
+    scrape_timeout: 5s
+
+  # Prometheus metrics (self-monitoring)
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["localhost:9090"]
+    scrape_interval: 30s
+
+  # System metrics (if node_exporter is installed)
+  #- job_name: "node-exporter"
+  #  static_configs:
+  #    - targets: ["localhost:9100"]
+  #  scrape_interval: 15s
+
+  # Grafana metrics (optional)
+  - job_name: "grafana"
+    static_configs:
+      - targets: ["localhost:3000"]
+    metrics_path: "/metrics"
+    scrape_interval: 30s
