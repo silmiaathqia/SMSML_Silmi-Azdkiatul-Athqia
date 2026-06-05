@@ -12,6 +12,8 @@
 
 **Proyek Akhir Kelas Membangun Sistem Machine Learning — Dicoding**
 
+[![Sertifikat Dicoding](https://img.shields.io/badge/Dicoding-Sertifikat-blue?style=for-the-badge)](https://www.dicoding.com/certificates/JMZVOJ9O3XN9)
+
 *oleh Silmi Azdkiatul Athqia (silmiathqia)*
 
 </div>
