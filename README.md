@@ -180,6 +180,20 @@ System Metrics:          ML Model Metrics:
 
 ---
 
+## 🎓 Sertifikat
+
+<div align="center">
+
+[![Lihat Sertifikat](https://img.shields.io/badge/Dicoding-Sertifikat%20MSML-blue?style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgo=)](https://www.dicoding.com/certificates/JMZVOJ9O3XN9)
+
+> 🏅 **Membangun Sistem Machine Learning** — Dicoding Indonesia
+>
+> Diperoleh oleh **Silmi Azdkiatul Athqia** | [Verifikasi Sertifikat](https://www.dicoding.com/certificates/JMZVOJ9O3XN9)
+
+</div>
+
+---
+
 <div align="center">
 <i>Proyek Akhir — Membangun Sistem Machine Learning (MSML) — Dicoding 2025</i>
 </div>
